@@ -45,7 +45,7 @@
   mergeoptions = --no-edit
 
 [user]
-	email = jb.feldis@studiomelipone.eu
+	email = jb@studiomelipone.eu
 	name = Jean-Baptiste Feldis
 
 [diff]
