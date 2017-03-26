@@ -25,8 +25,6 @@ eval "$(direnv hook zsh)"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1"
-export TRUSTED_IP=192.168.115.128
 
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
