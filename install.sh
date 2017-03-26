@@ -37,6 +37,15 @@ if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
 fi
 cd "$CURRENT_DIR"
 
+ZSH_THEMES_DIR="$HOME/.oh-my-zsh/custom/themes"
+mkdir -p "$ZSH_THEMES_DIR" && cd "$ZSH_THEMES_DIR"
+if [ ! -d "$ZSH_THEMES_DIR/jbfeldis.zsh-theme" ]; then
+  echo "-----> Adding jbfeldis theme..."
+  ln -s "$CURRENT_DIR/jbfeldis.zsh-theme" "$ZSH_THEMES_DIR/jbfeldis.zsh-theme"
+  rm -y "$HOME/.jbfeldis.zsh-theme"
+fi
+cd "$CURRENT_DIR"
+
 setopt nocasematch
 if [[ ! `uname` =~ "darwin" ]]; then
   git config --global core.editor "subl -n -w $@ >/dev/null 2>&1"
