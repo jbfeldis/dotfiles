@@ -42,7 +42,7 @@ mkdir -p "$ZSH_THEMES_DIR" && cd "$ZSH_THEMES_DIR"
 if [ ! -d "$ZSH_THEMES_DIR/jbfeldis.zsh-theme" ]; then
   echo "-----> Adding jbfeldis theme..."
   ln -s "$CURRENT_DIR/jbfeldis.zsh-theme" "$ZSH_THEMES_DIR/jbfeldis.zsh-theme"
-  rm -y "$HOME/.jbfeldis.zsh-theme"
+  rm -f "$HOME/.jbfeldis.zsh-theme"
 fi
 cd "$CURRENT_DIR"
 
