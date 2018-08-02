@@ -17,3 +17,5 @@ alias dokku='bash dokku_client.sh'
 alias go='xdg-open'
 
 alias gcvm='git commit -v -m'
+
+alias chromium-proxy='chromium-browser --proxy-server="http://quotaguard8587:d46783e076de@eu-west-1-babbage.quotaguard.com:9293"'

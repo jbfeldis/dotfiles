@@ -27,9 +27,9 @@ local current_dir='%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 local current_time='$fg[white][$fg[red]%T$fg[white]] '
 
-# PROMPT="╭─ ${current_time} ${user_host}:${current_dir} ${rvm_ruby} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
-PROMPT="╭─ ${current_time} ${user_host}:${current_dir} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
-╰─ $fg[green]$ $reset_color"
+# PROMPT="${current_time} ${user_host}:${current_dir} ${rvm_ruby} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
+PROMPT="${current_time} ${user_host}:${current_dir} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
+$fg[green]$ $reset_color"
 RPS1=" ${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="$fg[white]{$fg[yellow]"

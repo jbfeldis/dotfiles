@@ -12,12 +12,19 @@
 		"BracketHighlighter",
 		"CloseOtherWindows",
 		"Coffee Color Scheme",
+		"Color Highlighter",
+		"ColorPicker",
 		"DocBlockr",
 		"Emmet",
+		"ERB Snippets",
+		"Floobits",
 		"Git",
 		"GitGutter",
 		"JSHint Gutter",
 		"JSX",
+		"LiveReload",
+		"MarkdownEditing",
+		"MarkdownPreview",
 		"Material Theme",
 		"Material Theme - Appbar",
 		"Material Theme - White Panels",
@@ -25,6 +32,8 @@
 		"RuboCop",
 		"Ruby on Rails snippets",
 		"Ruby Slim",
-		"SCSS"
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter-eslint"
 	]
 }

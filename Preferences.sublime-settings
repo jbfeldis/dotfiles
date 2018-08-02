@@ -1,7 +1,11 @@
 {
 	"always_show_minimap_viewport": true,
+	"binary_file_patterns":
+	[
+		"node_modules/"
+	],
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Color Scheme - Default/Solarized (Light).tmTheme",
+	"color_scheme": "Packages/User/Color Highlighter/themes/Solarized (Light).tmTheme",
 	"detect_indentation": false,
 	"draw_white_space": true,
 	"ensure_newline_at_eof_on_save": true,
@@ -16,11 +20,12 @@
 		"build"
 	],
 	"font_face": "Hack",
-	"font_size": 21,
+	"font_size": 11,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -33,6 +38,7 @@
 	"material_theme_accent_yellow": true,
 	"material_theme_appbar_cyan": true,
 	"material_theme_tree_headings": true,
+	"original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"overlay_scroll_bars": "enabled",
 	"remember_open_files": false,
 	"rulers":
