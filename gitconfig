@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = vim
+	editor = subl -n -w  >/dev/null 2>&1
 
 [alias]
   co = checkout
@@ -45,8 +45,9 @@
   mergeoptions = --no-edit
 
 [user]
-	email = jb@studiomelipone.eu
+	email = 5403+jbfeldis@users.noreply.github.com
 	name = Jean-Baptiste Feldis
+	signingkey = CCCE2B4FDFEFFDB5
 
 [diff]
   # Use better, descriptive initials (c, i, w) instead of a/b.
@@ -72,6 +73,7 @@
 [merge]
   # Display common-ancestor blocks in conflict hunks
   conflictStyle = diff3
+	tool = smerge
 [mergetool]
   # Clean up backup files created by merge tools on tool exit
   keepBackup = false

@@ -19,18 +19,21 @@ ZSH_THEME_GIT_PROMPT_MODIFIED=" %{$YELLOW%}Mo"
 ZSH_THEME_GIT_PROMPT_ADDED=" %{$GREEN%}Ad"
 ZSH_THEME_GIT_PROMPT_UNTRACKED=" %{$WHITE%}Un"
 
-local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
+#local return_code="%(?..%{$fg[red]%}%? ↵%{$reset_color%})"
 
 local user_host='$fg[green]%n@%m$reset_color'
-local current_dir='%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}'
+local current_dir='%{$terminfo[bold]$fg[blue]%}%2~%{$reset_color%}'
 # local rvm_ruby="$fg[white][$fg[yellow]\${\$(~/.rvm/bin/rvm-prompt i v g)#ruby-}$fg[white]]%{$reset_color%}"
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 local current_time='$fg[white][$fg[red]%T$fg[white]] '
 
+local ret_status="%(?:%{$fg_bold[green]%}▒ :%{$fg_bold[red]%}▒ )"
+
 # PROMPT="${current_time} ${user_host}:${current_dir} ${rvm_ruby} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
-PROMPT="${current_time} ${user_host}:${current_dir} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
-$fg[green]$ $reset_color"
-RPS1=" ${return_code}"
+# PROMPT="${current_time} ${user_host}:${current_dir} ${git_branch}$WHITE [$RESET_COLOR$(git_prompt_status)$WHITE ]$RESET_COLOR
+# $fg[green]$ $reset_color"
+PROMPT="${ret_status}${current_time} ${user_host}:${current_dir} ${git_branch}$reset_color 👉 $reset_color"
+# RPS1=" ${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="$fg[white]{$fg[yellow]"
 ZSH_THEME_GIT_PROMPT_SUFFIX="$fg[white]}$reset_color"
