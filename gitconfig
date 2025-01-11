@@ -48,7 +48,7 @@
 [user]
 	email = 5403+jbfeldis@users.noreply.github.com
 	name = Jean-Baptiste Feldis
-	signingkey = 0D7DF3D9CE0BAA36
+	signingkey = 1D3C24D64CC68835
 
 [diff]
   # Use better, descriptive initials (c, i, w) instead of a/b.

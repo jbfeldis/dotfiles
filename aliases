@@ -6,19 +6,9 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
 
-# Nice file format
-alias ccat='source-highlight --out-format=esc -o STDOUT -i'
-
-# Dokku aliases
-alias staging="DOKKU_HOST=melipone.io bash dokku_client.sh"
-alias prod="DOKKU_HOST=studiomelipone.eu bash dokku_client.sh"
-alias dokku='bash dokku_client.sh'
-
 alias go='xdg-open'
 
 alias gcvm='git commit -v -m'
-
-alias chromium-proxy='chromium-browser --proxy-server="http://quotaguard8587:d46783e076de@eu-west-1-babbage.quotaguard.com:9293"'
-
-alias dcbe='docker-compose run --rm app bundle exec'
-alias dcbash='docker-compose run --rm app bash'
+alias ls='colorls'
+alias bat='batcat'
+alias ksnvim='NVIM_APPNAME="ks-nvim" nvim'
