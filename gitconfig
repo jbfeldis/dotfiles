@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = subl -n -w  >/dev/null 2>&1
+  editor = nvim
 
 [alias]
   co = checkout
@@ -37,6 +37,7 @@
 
   # Removes a file from the index
   unstage = reset HEAD --
+	sync = !git switch main && git pull --prune && git branch --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" { print $1 }' | xargs -r git branch -D
 
 [help]
   autocorrect = 1
@@ -47,7 +48,7 @@
 [user]
 	email = 5403+jbfeldis@users.noreply.github.com
 	name = Jean-Baptiste Feldis
-	signingkey = CCCE2B4FDFEFFDB5
+	signingkey = 0D7DF3D9CE0BAA36
 
 [diff]
   # Use better, descriptive initials (c, i, w) instead of a/b.
@@ -89,7 +90,7 @@
   # rebase = true
   # WARNING! This option, which does away with the one gotcha of
   # auto-rebasing on pulls, is only available from 1.8.5 onwards.
-  rebase = preserve
+	rebase = merges
 [push]
   # Default push should only push the current branch to its push target, regardless of its remote name
   default = upstream
@@ -110,6 +111,7 @@
 [tag]
   # Sort tags as version numbers whenever applicable, so 1.10.2 is AFTER 1.2.0.
   sort = version:refname
+	gpgSign = true
 [versionsort]
   prereleaseSuffix = -pre
   prereleaseSuffix = .pre
@@ -119,3 +121,6 @@
   prereleaseSuffix = .rc
 [rebase]
 	autosquash = true
+	updateRefs = true
+[commit]
+	gpgsign = true
