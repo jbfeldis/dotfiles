@@ -83,8 +83,8 @@ plugins=(
 	git 
 	zsh-syntax-highlighting
 	zsh-autosuggestions
-    z
-    bundler
+	z
+    	bundler
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -123,8 +123,8 @@ export NVM_DIR="$HOME/.nvm"
 
 # Customizations
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh
+source /home/linuxbrew/.linuxbrew/opt/chruby/share/chruby/chruby.sh
+source /home/linuxbrew/.linuxbrew/opt/chruby/share/chruby/auto.sh
 
 # Store your own aliases in the ~/.aliases file and load the here.
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"
@@ -134,7 +134,7 @@ eval "$(thefuck --alias)"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-setxkbmap -layout "fr,fr" -variant ",optimot_ergo_18" -option 'grp:alt_shift_toggle'
+# setxkbmap -layout "fr,fr" -variant ",optimot_ergo_18" -option 'grp:alt_shift_toggle'
 
 declare -A pomo_options
 pomo_options["work"]="25"
